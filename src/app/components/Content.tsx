@@ -6,8 +6,8 @@ import Footer from "./Footer";
 const Content = () => {
   return (
     <>
-      <Header pageTitle="" />
-      <div className="w-fit mx-auto grid grid-cols-1 lg:grid-cols-4 md:grid-cols-2 justify-items-center justify-center gap-y-8 gap-x-8 mt-10 mb-5">
+      <Header title="" />
+      <div className="w-fit mx-auto grid grid-cols-1 xl:grid-cols-4 lg:grid-cols-3 md:grid-cols-2 justify-items-center justify-center gap-y-8 gap-x-8 mt-10 mb-5">
         <ProductCard
           category="Indoor"
           productName="Wallet"
