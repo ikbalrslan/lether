@@ -17,8 +17,9 @@ const AboutUs = () => {
         <div className="">
           <div className="m-10 text-justify">
             Lorem ipsum dolor, sit amet consectetur adipisicing elit. Laborum id
-            ex sit laboriosam dolores consectetur quia inventore minima dolorem
-            quasi corrupti repellendu
+            ex sit laboriosam dolores consectetur qu
+            corrupti rerum earum quaerat fugiat nam dolorem! Eligendi a quasi
+            deserunt qui nulla pariatur, sunt sed minus.
           </div>
           <div className="mx-8">
             <Image
