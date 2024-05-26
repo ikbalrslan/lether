@@ -10,13 +10,16 @@ interface Details {
   optionText: string;
   color: string;
 }
-const SocialCard = (probs: Details) => {
+const MenuButton = (probs: Details) => {
   return (
     <>
       <Link target={probs.targetLink} href={probs.routeLink} className=" ">
-        <div className="px-2 py-2 cursor-pointer hover:bg-neutral-200 rounded-md 0">
+        <div className="px-2 py-2 cursor-pointer rounded-md 0">
           <div className="flex gap-2 ml-0 text-sm font-medium text-slate-900">
-            <Icon icon={probs.icon} style={{ fontSize: "20px", color:probs.color }} />
+            <Icon
+              icon={probs.icon}
+              style={{ fontSize: "20px", color: probs.color }}
+            />
             {probs.optionText}
           </div>
         </div>
@@ -25,4 +28,4 @@ const SocialCard = (probs: Details) => {
   );
 };
 
-export default SocialCard;
+export default MenuButton;

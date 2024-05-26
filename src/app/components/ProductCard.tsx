@@ -1,4 +1,6 @@
+"use client"
 import React from "react";
+import ProductModal from "./ProductModal";
 
 interface Details {
   category: string;
@@ -7,9 +9,12 @@ interface Details {
   imageUrl: string;
 }
 const ProductCard = (probs: Details) => {
+   const [isOpen, setOpen] = React.useState(false);
+
+   const toggleModal = () => setOpen(!isOpen);
   return (
     <>
-      <div className="w-72 bg-white shadow-md rounded-xl duration-500 hover:scale-105 hover:shadow-xl">
+      <div onClick={toggleModal} className="w-72 bg-white shadow-md rounded-xl duration-500 hover:scale-105 hover:shadow-xl">
         <a href="#">
           <img
             src={probs.imageUrl}
@@ -52,6 +57,7 @@ const ProductCard = (probs: Details) => {
           </div>
         </a>
       </div>
+      {/* <ProductModal isOpen={isOpen} toggleModal ={toggleModal}/> */}
     </>
   );
 };
