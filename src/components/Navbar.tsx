@@ -2,6 +2,7 @@ import React from "react";
 import SocialCard from "./social/SocialCard";
 import Drawer from "./Drawer";
 import { useTranslations } from "next-intl";
+import LocaleSwitcher from "./LocaleSwitcher";
 
 interface Details {
   title: string;
@@ -41,6 +42,7 @@ const Navbar = (probs: Details) => {
             color=""
           /> */}
       </div>
+      <LocaleSwitcher />
     </>
   );
 };

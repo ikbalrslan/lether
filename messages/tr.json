@@ -15,5 +15,9 @@
   },
   "Navbar": {
     "bag": "Sepet"
+  },
+  "LocaleSwitcher": {
+    "label": "Dil",
+    "locale": "{locale, select, tr {🇹🇷 tr} en {🇺🇸 en} other {Unknown}}"
   }
 }
