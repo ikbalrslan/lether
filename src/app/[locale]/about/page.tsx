@@ -4,6 +4,8 @@ import Content from "../../../components/Content";
 import AboutUs from "../../../components/AboutUs";
 import { useTranslations } from "next-intl";
 
+export const dynamic = "force-dynamic";
+
 export default function Home() {
   return (
     <main>

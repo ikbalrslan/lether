@@ -3,6 +3,8 @@ import Navbar from "../../components/Navbar";
 import Content from "../../components/Content";
 import { useTranslations } from "next-intl";
 
+export const dynamic = "force-dynamic";
+
 export default function Home() {
   const t = useTranslations("Index");
   return (
