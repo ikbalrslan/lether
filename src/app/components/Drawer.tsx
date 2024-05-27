@@ -1,6 +1,6 @@
 import React from "react";
-import LogoButton from "./buttons/LogoButton";
-import MenuButton from "./buttons/MenuButton";
+import MenuButton from "../../components/buttons/MenuButton";
+import LogoButton from "../../components/buttons/LogoButton";
 
 const Drawer = () => {
   return (
