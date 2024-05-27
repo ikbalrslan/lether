@@ -1,8 +1,10 @@
 import React from "react";
-import MenuButton from "../../components/buttons/MenuButton";
-import LogoButton from "../../components/buttons/LogoButton";
+import LogoButton from "./buttons/LogoButton";
+import MenuButton from "./buttons/MenuButton";
+import { useTranslations } from "next-intl";
 
 const Drawer = () => {
+  const t = useTranslations("Drawer");
   return (
     <>
       <div className="drawer w-14">
@@ -53,7 +55,7 @@ const Drawer = () => {
               <ul>
                 <li>
                   <MenuButton
-                    optionText="Categories"
+                    optionText={t("category")}
                     icon="iconamoon:category"
                     targetLink=""
                     routeLink="/"
@@ -62,7 +64,7 @@ const Drawer = () => {
                 </li>
                 <li>
                   <MenuButton
-                    optionText="Bag"
+                    optionText={t("bag")}
                     icon="mdi:shopping-outline"
                     targetLink=""
                     routeLink=""
@@ -71,7 +73,7 @@ const Drawer = () => {
                 </li>
                 <li>
                   <MenuButton
-                    optionText="About Us"
+                    optionText={t("aboutUs")}
                     icon="mdi:shopping-outline"
                     targetLink=""
                     routeLink="/about"

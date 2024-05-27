@@ -1,5 +1,6 @@
 import React from "react";
-import Navbar from "../../components/Navbar";
+import SocialCard from "./social/SocialCard";
+import Navbar from "./Navbar";
 
 interface Details {
   title: string;
@@ -11,6 +12,7 @@ const Header = (probs: Details) => {
         <title>Arslan Leather</title>
         <link rel="shortcut icon" href="favicon.png" type="favicon.png" />
         <Navbar title={""} />
+        
       </header>
     </>
   );

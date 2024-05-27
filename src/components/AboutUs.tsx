@@ -1,10 +1,9 @@
 import React from "react";
-
+import Header from "./Header";
 import Image from "next/image";
-import Top from "./../../../public/Top.jpeg";
+import Top from "./../../public/Top.jpeg";
+import Footer from "./Footer";
 import { useTranslations } from "next-intl";
-import Header from "../../components/Header";
-import Footer from "../../components/Footer";
 
 const AboutUs = () => {
   const t = useTranslations("AboutUs");
@@ -19,12 +18,7 @@ const AboutUs = () => {
         />
         <div className="">
           <div className="m-10 text-justify">
-            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Laborum id
-            ex sit laboriosam dolores consectetur quia inventore minima dolorem
-            quasi corrupti repellendus vel ducimus, facilis impedit officiis
-            reprehenderit exercitationem recusandae? Blanditiis omnis maiores
-            corrupti rerum earum quaerat fugiat nam dolorem! Eligendi a quasi
-            deserunt qui nulla pariatur, sunt sed minus.
+            <p>{t("contentTitle")}</p>
           </div>
           <div className="mx-8">
             <Image

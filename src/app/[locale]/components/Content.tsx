@@ -1,7 +1,8 @@
+import Footer from "@/components/Footer";
+import Header from "@/components/Header";
+import ProductCard from "@/components/ProductCard";
 import React from "react";
-import Header from "../../components/Header";
-import ProductCard from "../../components/ProductCard";
-import Footer from "../../components/Footer";
+
 
 const Content = () => {
   return (

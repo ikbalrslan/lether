@@ -1,7 +1,7 @@
 import React from "react";
-import Header from "../../components/Header";
-import ProductCard from "../../components/ProductCard";
-import Footer from "../../components/Footer";
+import ProductCard from "./ProductCard";
+import Header from "./Header";
+import Footer from "./Footer";
 
 const Content = () => {
   return (
