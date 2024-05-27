@@ -15,5 +15,9 @@
   },
   "Navbar": {
     "bag": "Bag"
+  },
+  "LocaleSwitcher": {
+    "label": "Language",
+    "locale": "{locale, select, tr {🇹🇷 tr} en {🇺🇸 en} other {Unknown}}"
   }
 }
