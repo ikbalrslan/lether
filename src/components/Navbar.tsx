@@ -11,7 +11,7 @@ const Navbar = (probs: Details) => {
   const t = useTranslations("Navbar");
   return (
     <>
-      <div className="flex">
+      <div className="flex w-44">
         <Drawer />
         <div className="">
           <a href="/">
@@ -19,30 +19,24 @@ const Navbar = (probs: Details) => {
           </a>
         </div>
       </div>
-      <div className="px-2 py-2">
-        <div className="font-medium text-slate-900">{probs.title}</div>
-        <a href="/">
-          <img src="/brand.png" alt="logo" className="w-24 -ml-0.5" />
-        </a>
-      </div>
+
+      <a href="/">
+        <img src="/brand.png" alt="logo" className="w-24" />
+      </a>
 
       <div className="flex justify-between">
-        <SocialCard
-          optionText={t("bag")}
-          icon="mdi:shopping-outline"
-          targetLink=""
-          routeLink=""
-          color=""
-        />
-        {/* <SocialCard
-            optionText="Social"
-            icon="mdi:instagram"
-            targetLink="_blank"
-            routeLink="https://www.instagram.com/arslanleatherco/"
+        <div className="mt-1 columns-[6rem]">
+          <SocialCard
+            optionText={t("bag")}
+            icon="mdi:shopping-outline"
+            targetLink=""
+            routeLink=""
             color=""
-          /> */}
+          />
+        </div>
+
+        <LocaleSwitcher />
       </div>
-      <LocaleSwitcher />
     </>
   );
 };
